@@ -1,0 +1,91 @@
+object ELTForm: TELTForm
+  Left = 0
+  Top = 0
+  Caption = 'ELT'
+  ClientHeight = 800
+  ClientWidth = 1200
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  inline PsgFrame: TPsgFrame
+    Align = Left
+    Size.Width = 320.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    inherited BackGround: TScrollBox
+      Size.Height = 800.000000000000000000
+      Viewport.Width = 320.000000000000000000
+      Viewport.Height = 800.000000000000000000
+      inherited GroupCon: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited Label17: TLabel
+          Enabled = False
+          Visible = False
+        end
+        inherited SwMoving: TSwitch
+          Enabled = False
+          Visible = False
+        end
+        inherited Label18: TLabel
+          Enabled = False
+          Visible = False
+        end
+        inherited SwSizing: TSwitch
+          Enabled = False
+          Visible = False
+        end
+      end
+      inherited GroupChar: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited GroupPara: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited GroupImag: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited BtnDelete: TButton
+        Enabled = False
+        Visible = False
+      end
+      inherited GroupFind: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited PosList: TListBox
+          Viewport.Width = 290.000000000000000000
+          Viewport.Height = 220.000000000000000000
+        end
+      end
+      inherited BtnDone: TButton
+        Enabled = False
+        Visible = False
+      end
+      inherited GroupIndent: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  object UIManager: TUIManager
+    BackgroundColor = xFFE0E0E0
+    SidesColor = claNull
+    IntervalBase = 0.250000000000000000
+    IntervalPlus = 0.050000000745058060
+    Align = Client
+    Cursor = crDefault
+    Size.Width = 880.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    object UIPassage: TUIPassage
+      BackgroundColor = claWhite
+      SidesColor = claNull
+      FoldLineColor = claNull
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 880.000000000000000000
+      Size.Height = 800.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end
