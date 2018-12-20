@@ -1,0 +1,71 @@
+object DemoForm: TDemoForm
+  Left = 0
+  Top = 0
+  Caption = 'DemoForm'
+  ClientHeight = 607
+  ClientWidth = 1062
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inline EditControl: TPsgFrame
+    Align = Left
+    Size.Width = 320.000000000000000000
+    Size.Height = 607.000000000000000000
+    Size.PlatformDefault = False
+    inherited BackGround: TScrollBox
+      Size.Height = 607.000000000000000000
+      Viewport.Width = 320.000000000000000000
+      Viewport.Height = 607.000000000000000000
+      inherited GroupCon: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited Label17: TLabel
+          Visible = False
+        end
+        inherited SwMoving: TSwitch
+          Visible = False
+        end
+        inherited Label18: TLabel
+          Visible = False
+        end
+        inherited SwSizing: TSwitch
+          Visible = False
+        end
+      end
+      inherited GroupChar: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited GroupPara: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited GroupImag: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited BtnDelete: TButton
+        Enabled = False
+        Visible = False
+      end
+      inherited GroupFind: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        inherited PosList: TListBox
+          Viewport.Width = 290.000000000000000000
+          Viewport.Height = 220.000000000000000000
+        end
+      end
+      inherited GroupIndent: TGroupBox
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  object MainPassage: TUIPassage
+    BackgroundColor = claWhite
+    SidesColor = claNull
+    FoldLineColor = claNull
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 742.000000000000000000
+    Size.Height = 607.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

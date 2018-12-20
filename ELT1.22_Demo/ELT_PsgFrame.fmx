@@ -1,0 +1,1557 @@
+object PsgFrame: TPsgFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 700.000000000000000000
+  Size.PlatformDefault = False
+  object BackGround: TScrollBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 700.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    ShowScrollBars = False
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 700.000000000000000000
+    object BtnLoad: TButton
+      CanFocus = False
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 10.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = #25171#24320
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = BtnLoadClick
+    end
+    object BtnSave: TButton
+      CanFocus = False
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 90.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = #20445#23384
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = BtnSaveClick
+    end
+    object GroupCon: TGroupBox
+      StyledSettings = [Family, FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 35.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 330.000000000000000000
+      Size.PlatformDefault = False
+      Text = #25511#21046
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 20
+      object Label15: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26174#31034#32972#26223
+      end
+      object SwShowBack: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 27
+        OnClick = SwShowBackClick
+      end
+      object Label16: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 60.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #22270#20687#32972#26223
+      end
+      object SwShowImag: TSwitch
+        CanFocus = False
+        Enabled = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 60.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 24
+        OnClick = SwShowImagClick
+      end
+      object Label17: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #25302#21160#25511#21046
+      end
+      object SwMoving: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 23
+        OnClick = SwMovingClick
+      end
+      object Label18: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 140.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #32553#25918#25511#21046
+      end
+      object SwSizing: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 140.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 20
+        OnClick = SwSizingClick
+      end
+      object Label19: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 175.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #28369#26465#25511#21046
+      end
+      object SwWheeling: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 175.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 17
+        OnClick = SwWheelingClick
+      end
+      object Label20: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #24038#36793#36317
+      end
+      object Label21: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #19978#36793#36317
+      end
+      object Label22: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 125.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #21491#36793#36317
+      end
+      object Label23: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 195.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #19979#36793#36317
+      end
+      object BackColor: TComboColorBox
+        Color = claWhite
+        Enabled = False
+        Position.X = 175.000000000000000000
+        Position.Y = 45.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 33
+        OnChange = BackColorChange
+      end
+      object Label26: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 205.000000000000000000
+        Position.Y = 18.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #32972#26223#39068#33394
+        TabOrder = 36
+      end
+      object EditPL: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 41
+        Cursor = crIBeam
+        Max = 20.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 85.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditPLChange
+      end
+      object EditPR: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 40
+        Cursor = crIBeam
+        Max = 20.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 120.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditPRChange
+      end
+      object EditPT: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 39
+        Cursor = crIBeam
+        Max = 20.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 155.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditPTChange
+      end
+      object EditPB: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 37
+        Cursor = crIBeam
+        Max = 20.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 190.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditPBChange
+      end
+      object Label35: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 270.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26174#31034#36793#26694
+        TabOrder = 34
+      end
+      object SwShowSides: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 85.000000000000000000
+        Position.Y = 270.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 32
+        OnSwitch = SwShowSidesSwitch
+      end
+      object Label36: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 200.000000000000000000
+        Position.Y = 230.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #36793#26694#39068#33394
+        TabOrder = 35
+      end
+      object SidesColor: TComboColorBox
+        Color = claWhite
+        Enabled = False
+        Position.X = 165.000000000000000000
+        Position.Y = 255.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 42
+        OnChange = SidesColorChange
+      end
+      object Label37: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 295.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #36793#26694#23485#24230
+        TabOrder = 43
+      end
+      object SidesWidth: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 38
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 10.000000000000000000
+        Value = 1.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 235.000000000000000000
+        Position.Y = 290.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Enabled = False
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        OnChange = SidesWidthChange
+      end
+    end
+    object GroupChar: TGroupBox
+      StyledSettings = [FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 515.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 260.000000000000000000
+      Size.PlatformDefault = False
+      Text = #25991#23383
+      TextSettings.Font.Family = '(Default)'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 22
+      object Label1: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 20.000000000000000000
+        Text = #23383#20307
+      end
+      object FontList: TComboBox
+        CanFocus = False
+        Position.X = 65.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 235.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        OnChange = FontListChange
+      end
+      object Label2: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 20.000000000000000000
+        Text = #23383#21495
+      end
+      object Label3: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 20.000000000000000000
+        Text = #20559#31227
+      end
+      object Label5: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 150.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #25991#23383#39068#33394#21450#21487#35265#24230
+      end
+      object BtnUl: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 185.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 35.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 44
+        Text = 'U'
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnUlClick
+      end
+      object BtnBd: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 240.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 35.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 43
+        Text = 'B'
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnBdClick
+      end
+      object BtnIt: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 185.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 35.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 42
+        Text = 'I'
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnItClick
+      end
+      object BtnSO: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 240.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 35.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 41
+        Text = 'S'
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnSOClick
+      end
+      object Label4: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 15.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #32972#26223#39068#33394#21450#21487#35265#24230
+        TabOrder = 45
+      end
+      object ColorBox: TComboColorBox
+        Color = claBlack
+        Position.X = 90.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        OnChange = ColorBoxChange
+      end
+      object BgColorBox: TComboColorBox
+        Color = claNull
+        Position.X = 90.000000000000000000
+        Position.Y = 205.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 40
+        OnChange = BgColorBoxChange
+      end
+      object SizeBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 36
+        Cursor = crIBeam
+        Min = 1.000000000000000000
+        Max = 1000.000000000000000000
+        Value = 1.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 65.000000000000000000
+        Position.Y = 65.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = SizeBoxChange
+      end
+      object OffsetBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 35
+        Cursor = crIBeam
+        Min = -100.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 65.000000000000000000
+        Position.Y = 105.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = OffsetBoxChange
+      end
+      object OpacityList: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 39
+        Cursor = crIBeam
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 240.000000000000000000
+        Position.Y = 155.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = OpacityListChange
+      end
+      object BgOpacityList: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 38
+        Cursor = crIBeam
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 240.000000000000000000
+        Position.Y = 205.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = BgOpacityListChange
+      end
+      object Label27: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 285.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = '%'
+        TabOrder = 47
+      end
+      object Label28: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 285.000000000000000000
+        Position.Y = 210.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = '%'
+        TabOrder = 46
+      end
+    end
+    object GroupPara: TGroupBox
+      StyledSettings = [Family, FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 885.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 230.000000000000000000
+      Size.PlatformDefault = False
+      Text = #27573#33853
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 21
+      object ALBox: TComboBox
+        CanFocus = False
+        Position.X = 230.000000000000000000
+        Position.Y = 190.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        OnChange = ALBoxChange
+      end
+      object Label10: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 160.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #27573#21518#38388#36317
+      end
+      object Label11: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 195.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #34892#21518#38388#36317
+      end
+      object Label12: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 160.000000000000000000
+        Position.Y = 195.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23545#40784#26041#24335
+      end
+      object Label6: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #39318#34892#32553#36827
+      end
+      object Label7: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #24038#20391#20559#31227
+      end
+      object Label8: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 160.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #21491#20391#20559#31227
+      end
+      object Label9: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #27573#21069#38388#36317
+      end
+      object FIBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 40
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 70.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = FIBoxChange
+      end
+      object Label29: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 51
+      end
+      object LIBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 39
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 110.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = LIBoxChange
+      end
+      object Label30: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 50
+      end
+      object RIBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 33
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 110.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = RIBoxChange
+      end
+      object Label31: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 270.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 49
+      end
+      object PBBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 38
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 150.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 0.100000001490116100
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = PBBoxChange
+      end
+      object Label32: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #34892
+        TabOrder = 48
+      end
+      object PABox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 34
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 230.000000000000000000
+        Position.Y = 150.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 0.100000001490116100
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = PABoxChange
+      end
+      object Label33: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 270.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #34892
+        TabOrder = 47
+      end
+      object LSBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 37
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 190.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 0.100000001490116100
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = LSBoxChange
+      end
+      object Label34: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 195.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #34892
+        TabOrder = 46
+      end
+      object Label44: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #32423
+        TabOrder = 45
+      end
+      object ILvBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 36
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 30.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 0.100000001490116100
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = ILvBoxChange
+      end
+      object Label45: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #32553#36827#32423#21035
+        TabOrder = 52
+      end
+      object Label46: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 160.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #25240#21472#23376#32423
+        TabOrder = 35
+      end
+      object SwFold: TSwitch
+        CanFocus = False
+        IsChecked = False
+        Position.X = 230.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 32
+        OnSwitch = SwFoldSwitch
+      end
+    end
+    object GroupImag: TGroupBox
+      StyledSettings = [Family, FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 775.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 110.000000000000000000
+      Size.PlatformDefault = False
+      Text = #25554#22270
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 25
+      object IMInsert: TButton
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 25.000000000000000000
+        Position.Y = 45.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = #25554#22270
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = IMInsertClick
+      end
+      object Label14: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 109.000000000000000000
+        Position.Y = 27.000000000000000000
+        Size.Width = 51.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #25554#22270#23485
+      end
+      object Label13: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 110.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 51.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #25554#22270#39640
+      end
+      object IMWidth: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 37
+        Cursor = crIBeam
+        Min = 10.000000000000000000
+        Max = 5000.000000000000000000
+        Value = 10.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Center
+        Position.X = 170.000000000000000000
+        Position.Y = 20.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Enabled = False
+        Size.Width = 125.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = IMWidthChange
+      end
+      object IMHeight: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 36
+        Cursor = crIBeam
+        Min = 10.000000000000000000
+        Max = 5000.000000000000000000
+        Value = 10.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Center
+        Position.X = 170.000000000000000000
+        Position.Y = 60.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Enabled = False
+        Size.Width = 125.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = IMHeightChange
+      end
+    end
+    object BtnDelete: TButton
+      CanFocus = False
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 170.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = #21024#38500
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = BtnDeleteClick
+    end
+    object GroupFind: TGroupBox
+      StyledSettings = [Family, FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 1115.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 380.000000000000000000
+      Size.PlatformDefault = False
+      Text = #26597#25214
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 23
+      object EditFind: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        TextSettings.Font.Size = 15.000000000000000000
+        Position.X = 95.000000000000000000
+        Position.Y = 260.000000000000000000
+        Size.Width = 205.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditFindChange
+        object FindClr: TClearEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object PosList: TListBox
+        Position.X = 10.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        OnClick = PosListClick
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 290.000000000000000000
+        Viewport.Height = 220.000000000000000000
+      end
+      object EditReplace: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 9
+        TextSettings.Font.Size = 15.000000000000000000
+        Position.X = 95.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 205.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = EditReplaceChange
+        object ReplaceClr: TClearEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 28.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Label24: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 305.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26367#25442#30446#26631
+      end
+      object BtnRpAll: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 160.000000000000000000
+        Position.Y = 345.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 41
+        Text = #20840#37096
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnRpAllClick
+      end
+      object BtnRpCancel: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 235.000000000000000000
+        Position.Y = 345.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 40
+        Text = #21462#28040
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnRpCancelClick
+      end
+      object BtnRpSkip: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 85.000000000000000000
+        Position.Y = 345.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 42
+        Text = #36339#36807
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnRpSkipClick
+      end
+      object BtnRpNext: TButton
+        CanFocus = False
+        StyledSettings = [FontColor]
+        Position.X = 10.000000000000000000
+        Position.Y = 345.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 43
+        Text = #26367#25442
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        OnClick = BtnRpNextClick
+      end
+      object Label25: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 265.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26597#25214#30446#26631
+        TabOrder = 44
+      end
+    end
+    object BtnDone: TButton
+      CanFocus = False
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 250.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = #23436#25104
+      TextSettings.Font.Size = 15.000000000000000000
+    end
+    object GroupIndent: TGroupBox
+      StyledSettings = [Family, FontColor, Other]
+      Position.X = 5.000000000000000000
+      Position.Y = 365.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      Text = #32553#36827
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 24
+      object Label38: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #27599#32423#39318#34892
+        TabOrder = 37
+      end
+      object LFBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 39
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 30.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = LFBoxChange
+      end
+      object Label39: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 49
+      end
+      object Label40: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #27599#32423#24038#20391
+        TabOrder = 50
+      end
+      object LLBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 36
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 70.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = LLBoxChange
+      end
+      object Label41: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 47
+      end
+      object Label42: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 10.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = #24494#36719#38597#40657
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #27599#32423#21491#20391
+        TabOrder = 51
+      end
+      object LRBox: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 32
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 20.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 80.000000000000000000
+        Position.Y = 110.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        KillFocusByReturn = True
+        OnChange = LRBoxChange
+      end
+      object Label43: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 120.000000000000000000
+        Position.Y = 115.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #23383#31526
+        TabOrder = 46
+      end
+      object Label47: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 200.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26631#35782#39068#33394
+        TabOrder = 35
+      end
+      object FLColor: TComboColorBox
+        Color = claWhite
+        Position.X = 165.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 43
+        OnChange = FLColorChange
+      end
+      object Label48: TLabel
+        AutoSize = True
+        StyledSettings = [Style, FontColor]
+        HitTest = True
+        Position.X = 165.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 15.000000000000000000
+        Text = #26631#35782#23485#24230
+        TabOrder = 44
+      end
+      object FLWidth: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 38
+        Cursor = crIBeam
+        DecimalDigits = 1
+        Max = 10.000000000000000000
+        Value = 1.000000000000000000
+        ValueType = Float
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        Position.X = 235.000000000000000000
+        Position.Y = 100.000000000000000000
+        HorzIncrement = 0.000000000000000000
+        VertIncrement = 1.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        OnChange = FLWidthChange
+      end
+    end
+  end
+  object SaveDialog: TSaveDialog
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    Left = 280
+    Top = 8
+  end
+  object OpenDialog: TOpenDialog
+    Left = 240
+    Top = 8
+  end
+end

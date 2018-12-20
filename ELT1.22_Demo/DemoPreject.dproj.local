@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018-12-14 12:55:14.341,=D:\MyOwn\My Projects\Unit1.pas</Transaction>
+    <Transaction>2018-12-14 12:55:51.937,=D:\MyOwn\My Projects\ELT1.2\ELT.Extra.pas</Transaction>
+    <Transaction>2018-12-14 12:55:51.957,=D:\MyOwn\My Projects\ELT1.2\ELT.Main.pas</Transaction>
+    <Transaction>2018-12-14 12:55:52.005,=D:\MyOwn\My Projects\ELT1.2\ELT.Windows.pas</Transaction>
+    <Transaction>2018-12-14 12:55:52.136,=D:\MyOwn\My Projects\ELT1.2\ELT_PsgFrame.pas</Transaction>
+    <Transaction>2018-12-14 12:56:24.820,D:\MyOwn\My Projects\ELT1.2\ELT_PsgFrame.pas=</Transaction>
+    <Transaction>2018-12-14 12:56:25.478,D:\MyOwn\My Projects\ELT1.2\ELT.Windows.pas=</Transaction>
+    <Transaction>2018-12-14 12:56:25.492,D:\MyOwn\My Projects\ELT1.2\ELT.Main.pas=</Transaction>
+    <Transaction>2018-12-14 12:56:25.503,D:\MyOwn\My Projects\ELT1.2\ELT.Extra.pas=</Transaction>
+    <Transaction>2018-12-14 12:57:02.725,D:\MyOwn\My Projects\ELT1.2_Demo\DemoUnit.fmx=D:\MyOwn\My Projects\Unit1.fmx</Transaction>
+    <Transaction>2018-12-14 12:57:02.725,D:\MyOwn\My Projects\ELT1.2_Demo\DemoUnit.pas=D:\MyOwn\My Projects\Unit1.pas</Transaction>
+    <Transaction>2018-12-14 12:57:08.141,D:\MyOwn\My Projects\ELT1.2_Demo\DemoPreject.dproj=D:\MyOwn\My Projects\Project1.dproj</Transaction>
+    <Transaction>2018-12-14 12:57:31.036,=D:\MyOwn\My Projects\ELT1.2_Demo\ELT.Extra.pas</Transaction>
+    <Transaction>2018-12-14 12:57:31.053,=D:\MyOwn\My Projects\ELT1.2_Demo\ELT.Main.pas</Transaction>
+    <Transaction>2018-12-14 12:57:31.059,=D:\MyOwn\My Projects\ELT1.2_Demo\ELT.Windows.pas</Transaction>
+    <Transaction>2018-12-14 12:57:31.164,=D:\MyOwn\My Projects\ELT1.2_Demo\ELT_PsgFrame.pas</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
+</BorlandProject>
